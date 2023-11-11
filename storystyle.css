@@ -33,7 +33,12 @@ header a {
   overflow: hidden;
   transition: background-image 2s;
 }
-
+.colorBg {
+  padding-top: 200px;
+}
+#conclusion {
+  background-image: url("images/notofrance.jpeg");
+}
 .scrollText {
   margin: 50vh auto;
   max-width: 50rem;
@@ -49,7 +54,7 @@ header a {
   padding-bottom: 50vh;
 }
 #introduction {
-  background-image: url("https://images.unsplash.com/photo-1494172961521-33799ddd43a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80");
+  background-image: url("https://www.aljazeera.com/wp-content/uploads/2022/07/000_32FL8MB.jpg?resize=770%2C513&quality=80");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -62,10 +67,7 @@ header a {
   display: block;
   clear: both;
 }
-.alignRight {
-  float: right;
-  margin: 0 0 1rem 1rem;
-}
+
 .circle {
   width: 200px;
   height: 200px;
@@ -93,3 +95,83 @@ header a {
   margin: 0 auto;
   display: block;
 }
+
+/*My CSS*/
+.coupLeaders {
+  height: 500px;
+  width: auto;
+}
+.colorBg {
+  background-image: url(images/macron\ and\ Conde.jpeg);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: top left;
+}
+.conclusion {
+  background-image: url(images/notofrance.jpeg);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: top left;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  /* Adjustments for tablet and smaller screens */
+  header {
+    height: 70vh;
+  }
+
+  .circle {
+    width: 150px;
+    height: 150px;
+  }
+
+  .big {
+    font-size: 3rem;
+  }
+
+  .small {
+    font-size: 1.5rem;
+  }
+
+  .coupLeaders {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Adjustments for mobile screens */
+  header {
+    height: 50vh;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .big {
+    font-size: 2rem;
+  }
+
+  .small {
+    font-size: 1rem;
+  }
+
+  .coupLeaders {
+    height: auto;
+    width: 100%;
+  }
+}
+
+/* Your new CSS styles */
+/* You can add your custom CSS styles here for specific elements or classes */

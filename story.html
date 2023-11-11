@@ -39,164 +39,90 @@
         different but the common denominators in most of the recent coup is
         France.
       </p>
-      <div style="min-height: 341px"></div>
-      <p>Let's look at the biggest surprises.</p>
+      <img
+        src="images/coup leaders.png"
+        alt="coup leaders"
+        class="coupLeaders"
+      />
     </section>
+
+    <section class="colorBg" class="scrollContainer">
+      <div class="scrollText" class="new">
+        <h2 class="france-role">France role</h2>
+        <p class="france-role">
+          Many of these countries were once colonies of France during the
+          colonial era, and the Republic of Guinea's government under Alpha
+          Condé was ousted by Mamady Doumbouya, a former French Legionnaire who
+          held the rank of corporal.
+        </p>
+      </div>
+    </section>
+
     <section id="changingBg" class="scrollContainer">
       <div id="decline" class="scrollText">
-        <h2>Biggest decline</h2>
-        <aside class="alignRight">
-          <div class="circle redBg">
-            <span class="big">-1239</span>
-            <span class="small">Votes</span>
-          </div>
-        </aside>
+        <h2>Uranium</h2>
+
         <p>
-          Senterpartiet had a decrease in votes of 1239 since 2019. This means
-          that Arbeiderpartiet is losing a lot of partners since 2019.
+          For instance, France was acquiring uranium from Canada at a cost of
+          ¢200 per kilogram, while simultaneously procuring uranium from Niger
+          for approximately ¢0.80 per kilogram. This stark contrast in pricing
+          left many Nigeriens feeling that the arrangement was highly
+          inequitable and, to some extent, exploitative.
+          <!--https://www.samaa.tv/20873396-niger-france-uranium-african-country-increases-uranium-price-to-200-kg-->
         </p>
       </div>
       <div id="increase" class="scrollText">
-        <h2>Highest riser</h2>
-        <aside class="alignRight">
-          <div class="circle greenBg">
-            <span class="big">1290</span>
-            <span class="small">Votes</span>
-          </div>
-        </aside>
+        <h2>Operation Barkhane</h2>
+        <aside class="alignRight"></aside>
         <p>
-          INP, who were founded in 2020 and thusly not elegible in the 2019
-          election, make a huger impact on the 2023 election.
+          France presence in Mali may have led to more violence in the country
+          according to the Harvard International Review. The intention of the
+          French might have been good but their execution or their approach to
+          conflict resolution was totally flawed, since they left Mali in more
+          ciaos then before they arrived in the country.
+          <!--https://hir.harvard.edu/how-france-failed-mali-the-end-of-operation-barkhane/-->
         </p>
       </div>
-      <div id="comparisonchart" class="scrollText">
-        <h2>Steal from the rich...</h2>
+    </section>
+    <section class="textSection">
+      <h2>The motivations behind the coups</h2>
+      <p>
+        Delving further into the motivations driving these coups, it becomes
+        clear that France's economic interests hold a central position.
+        Mineral-rich regions like Niger with its uranium, Gabon with its crude
+        oil, and Guinea with its bauxite reserves, serve as significant sources
+        of economic influence for France. This economic interdependence
+        establishes a fragile equilibrium, and any alteration in power dynamics
+        can precipitate political instability.
+      </p>
+      <iframe
+        src="https://www.google.com/maps/d/u/0/embed?mid=1dVSKPARejmM3besSH38A5e85C1tx_Ok&ehbc=2E312F&noprof=1"
+        width="640"
+        height="480"
+      ></iframe>
+    </section>
+
+    <!--Above is done or mine-->
+    <section class="conclusion" class="scrollContainer">
+      <div class="scrollText" class="new">
+        <h2>Conclusion</h2>
         <p>
-          Comparing the numbers, we could argue that INP has "stolen" the votes
-          Senterpartiet got in 2019. This means that Høyre now have more
-          potenital partners and will probably be in government for the next
-          four years.
+          In conclusion, many of the recent coups in Africa can be traced back
+          to a prevailing anti-French sentiment among the inhabitants of
+          Francophone nations. A significant portion of the population feels
+          that France has exploited them for an extended period, prompting a
+          desire for change. This sentiment often translates into a desire to
+          oust governments aligned with France.
         </p>
-        <p>But, these were not the only changes from 2019.</p>
-        <canvas id="comparison"></canvas>
+        <p>
+          While some coup leaders genuinely seek changes that would benefit
+          their people, others may exploit this anti-French sentiment as a
+          pretext to seize power and perpetuate the existing status quo.
+        </p>
       </div>
     </section>
 
     <script>
-      const comparison = document.getElementById("comparison");
-      //Dataset
-      const data = [
-        {
-          Partyname: "Arbeiderpartiet",
-          Abbreviation: "AP",
-          Votes2019: "2603",
-          Votes2023: "2982",
-        },
-        {
-          Partyname: "Fremskrittspartiet",
-          Abbreviation: "FrP",
-          Votes2019: "1034",
-          Votes2023: "1030",
-        },
-        {
-          Partyname: "Høyre",
-          Abbreviation: "H",
-          Votes2019: "4141",
-          Votes2023: "3997",
-        },
-        {
-          Partyname: "Kristelig Folkeparti",
-          Abbreviation: "KrF",
-          Votes2019: "478",
-          Votes2023: "510",
-        },
-        {
-          Partyname: "Miljøpartiet de Grønne",
-          Abbreviation: "MdG",
-          Votes2019: "1058",
-          Votes2023: "530",
-        },
-        {
-          Partyname: "Rødt",
-          Abbreviation: "R",
-          Votes2019: "1044",
-          Votes2023: "802",
-        },
-        {
-          Partyname: "Senterpartiet",
-          Abbreviation: "Sp",
-          Votes2019: "2037",
-          Votes2023: "798",
-        },
-        {
-          Partyname: "Sosialistisk Venstreparti",
-          Abbreviation: "SV",
-          Votes2019: "744",
-          Votes2023: "672",
-        },
-        {
-          Partyname: "Venstre",
-          Abbreviation: "V",
-          Votes2019: "393",
-          Votes2023: "190",
-        },
-        {
-          Partyname: "Pensjonistpartiet",
-          Abbreviation: "Pp",
-          Votes2019: "1206",
-          Votes2023: "1438",
-        },
-        {
-          Partyname: "Industri og Næringspartiet",
-          Abbreviation: "INP",
-          Votes2019: "0",
-          Votes2023: "1290",
-        },
-        {
-          Partyname: "Liberalistene",
-          Abbreviation: "Lib",
-          Votes2019: "0",
-          Votes2023: "51",
-        },
-        {
-          Partyname: "Norgesdemokratene",
-          Abbreviation: "ND",
-          Votes2019: "0",
-          Votes2023: "201",
-        },
-      ];
-
-      //Create arrays with the necessary data, to make it available for JavaScript
-      const labelData = [];
-      data.map((item) => labelData.push(item.Abbreviation));
-      const votes2019 = [];
-      data.map((item) => votes2019.push(item.Votes2019));
-      const votes2023 = [];
-      data.map((item) => votes2023.push(item.Votes2023));
-
-      //Initialize the graph using Chart.js
-      new Chart(comparison, {
-        type: "bar",
-        data: {
-          labels: labelData, //data array made from the data set
-          datasets: [
-            {
-              label: "Votes 2019",
-              data: votes2019, //data array made from the data set
-            },
-            {
-              label: "Votes 2023",
-              data: votes2023, //data array made from the data set
-            },
-          ],
-        },
-        options: {
-          scales: {
-            y: { beginAtZero: true },
-          },
-        },
-      });
-
       //Function to check if element is in viewport
       function isInViewport(el) {
         const rect = el.getBoundingClientRect();
@@ -220,15 +146,11 @@
           if (isInViewport(document.getElementById("decline"))) {
             //...change the parent elements background image
             document.getElementById("changingBg").style.backgroundImage =
-              "url(https://images.unsplash.com/photo-1606955317161-cb7d261c039a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)";
+              "url(images/uranium.jpeg)";
           }
           if (isInViewport(document.getElementById("increase"))) {
             document.getElementById("changingBg").style.backgroundImage =
-              "url(https://images.unsplash.com/photo-1465343161283-c1959138ddaa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)";
-          }
-          if (isInViewport(document.getElementById("comparisonchart"))) {
-            document.getElementById("changingBg").style.backgroundImage =
-              "url(https://images.unsplash.com/photo-1516706332927-bb3a20d62514?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80)";
+              "url(images/frenchtroop.jpeg)";
           }
         },
         {
