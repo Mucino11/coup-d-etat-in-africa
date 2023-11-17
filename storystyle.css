@@ -66,6 +66,7 @@ header a {
   margin: 0 auto;
   display: block;
   clear: both;
+  padding-top: 30px;
 }
 
 .circle {
@@ -121,14 +122,21 @@ header a {
   background-size: cover;
   background-position: top left;
 }
-
+iframe {
+  height: 600px;
+  width: 100%;
+}
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {
   /* Adjustments for tablet and smaller screens */
+
   header {
     height: 70vh;
   }
-
+  h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   .circle {
     width: 150px;
     height: 150px;
@@ -148,10 +156,23 @@ header a {
   }
 }
 
+iframe {
+  height: 500px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border: none;
+}
+
 @media (max-width: 480px) {
   /* Adjustments for mobile screens */
+
   header {
     height: 50vh;
+  }
+  h1 {
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .circle {
@@ -173,5 +194,9 @@ header a {
   }
 }
 
+img {
+  height: auto;
+  width: auto;
+}
 /* Your new CSS styles */
 /* You can add your custom CSS styles here for specific elements or classes */
